@@ -1,3 +1,9 @@
+## NOTE: always leave space before and after <-, -, +, *, /. Leave a blank after commas. Leave blanks around 
+## <, >, ==, <=, =>, etc.
+## Do not leave blanks before paranthesis, e.g.
+## BAD: data.frame (x, y)
+## GOOTD: data.frame(x, y)
+
 # PROBLEM 1
 
 # a)
@@ -9,6 +15,7 @@ y <- c(1,4)
 # c)
 x-y
 #The result is such because the two vectors have a different length
+## ... and?
 
 # d)
 s <- c(x,y)

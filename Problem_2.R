@@ -8,6 +8,8 @@ xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
 xmax-xmin
 
 # c)
+## NOTE: use the mean function
+
 totalMinimum <- sum(xmin)
 totalMinimum
 avgMinimum <- totalMinimum/length(xmin)
@@ -19,12 +21,14 @@ avgMaximum <- totalMaximum/length(xmax)
 avgMaximum
 
 # d)
+## c is not necessary here
 xmin [c(xmin<avgMinimum)]
 
 # e) 
 xmin [c(xmin>avgMinimum)]
 
 # f)
+## Nice
 dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
 names(xmin) <- dayNames
 xmin
@@ -36,6 +40,8 @@ Temperatures <- data.frame(xmin,xmax)
 Temperatures
 
 # f)
+## c is not necessary here
+
 xminFahrenheit <- c(9/5*xmin+32)
 Temperatures[["xminFahrenheit"]] <- xminFahrenheit
 Temperatures
